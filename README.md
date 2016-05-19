@@ -1,4 +1,4 @@
-# Simple Web Worker Demo
+# [Simple Web Worker Demo](http://theirondeveloper.com/simple-webworker-demo/)
 
 This is a bare bones demo of a web worker and its usage.
 
