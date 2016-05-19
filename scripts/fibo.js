@@ -11,5 +11,7 @@ fiboWorker.addEventListener('message', function(workerMessage) {
 
 fiboForm.addEventListener('submit', function(event) {
   event.preventDefault();
+  fiboOutput.setAttribute('placeholder', 'loading...');
+  fiboOutput.value = '';
   fiboWorker.postMessage(fiboInput.value);
 });

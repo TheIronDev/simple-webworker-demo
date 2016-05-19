@@ -21,6 +21,10 @@ self.addEventListener('message', function(message) {
   var inputValue = message.data;
   var outputValue = getFibo(inputValue);
 
-  self.postMessage(outputValue);
+  // Mocking out asynchronous behavior (but not too long)
+  var delay = outputValue < 1000 ? outputValue : 1000;
+  setTimeout(function() {
+    self.postMessage(outputValue);
+  }, delay)
 });
 
